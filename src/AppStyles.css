@@ -1,0 +1,148 @@
+/* AppStyles.css */
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+button {
+  padding: 8px 14px;
+  background-color: #7c3aed; /* Violet-600 */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6d28d9; /* Violet-700 */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select {
+  padding: 6px 10px;
+  margin: 4px 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 500;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.status {
+  margin-top: 12px;
+  font-weight: 500;
+  color: #5b21b6;
+}
+
+ .question-card {
+  border: 1px solid #ccc;
+  border-left: 5px solid #7c3aed;
+  padding: 12px;
+  border-radius: 6px;
+  min-width: 220px;
+  flex: 1 1 250px;
+  background-color: #ede9fe; 
+  /* #f5f3ff;  */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* .question-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background-color: #fdfcff;
+} */
+
+.question-card span {
+  font-weight: bold;
+  color: #6b21a8;
+}
+
+.optional-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 8px 0;
+}
+
+.page {
+  padding: 24px;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f5ff; /* Light violet background */
+  color: #2e1065; /* Violet-950 */
+}
+
+.input-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #d8b4fe; /* Violet-300 */
+  border-radius: 6px;
+  background-color: #f3e8ff; /* Violet-100 */
+  color: #3b0764; /* Violet-900 */
+}
+
+.input-group button {
+  padding: 10px 18px;
+  font-size: 16px;
+  background-color: #8b5cf6; /* Violet-500 */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.input-group button:hover {
+  background-color: #7c3aed; /* Violet-600 */
+}
+
+.status-text {
+  font-weight: 600;
+  color: #6b21a8; /* Violet-800 */
+  margin: 12px 0;
+}
+
+.status-details {
+  background-color: #f5f3ff; /* Violet-50 */
+  border: 1px solid #ddd6fe; /* Violet-200 */
+  border-left: 4px solid #7c3aed; /* Violet-600 */
+  padding: 16px;
+  border-radius: 6px;
+  color: #3c096c; /* Violet-900 */
+  margin-top: 12px;
+}
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

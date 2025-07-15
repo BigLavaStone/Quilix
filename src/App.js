@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import UploadForm from "./components/UploadForm";
+import StatusPage from "./components/StatusPage";
+import QuestionsPage from "./components/QuestionsPage";
+import './AppStyles.css';
 
 function App() {
+  const [page, setPage] = useState("upload");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Quilix PYQ Analyzer</h1>
+      <nav>
+        <button onClick={() => setPage("upload")}>Upload</button>
+        <button onClick={() => setPage("status")}>Status</button>
+        <button onClick={() => setPage("questions")}>Questions</button>
+      </nav>
+      <hr />
+      {page === "upload" && <UploadForm />}
+      {page === "status" && <StatusPage />}
+      {page === "questions" && <QuestionsPage />}
     </div>
   );
 }
