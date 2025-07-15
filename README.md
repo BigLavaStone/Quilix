@@ -1,8 +1,7 @@
 # Quilix
-A PYQ Analyser
+# A PYQ Analyser
 
-Project Link -
+## 🌐 Project Links
 
-quilix-7894b.web.app
-
-quilix-7894b.firebaseapp.com
+- [quilix-7894b.web.app](https://quilix-7894b.web.app)
+- [quilix-7894b.firebaseapp.com](https://quilix-7894b.firebaseapp.com)
